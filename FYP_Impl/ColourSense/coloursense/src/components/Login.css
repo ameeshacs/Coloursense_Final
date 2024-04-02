@@ -1,0 +1,187 @@
+/* Login.css */
+
+/* Container for the login page */
+/* Login.css */
+
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  overflow: hidden; /* Prevent overflow content */
+}
+
+body {
+  margin: 0;
+
+}
+
+/* Left section with logo and tagline */
+.left-section {
+  flex: 1;
+  padding-right: 20px;
+  text-align: center;
+  background-color: #B4B8AB;
+  height: 100%; /* Set the height of the left section to 100% of its parent (.login-container) */
+  overflow-y: hidden; /* Allow vertical scrolling if content exceeds the height */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items horizontally and vertically */
+}
+
+.login-logo {
+  margin: 50px auto;
+  margin-top: 20px;
+  margin-bottom: 20px ;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.tagline {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal; /* Use the custom font family */
+  font-size: 14px;
+  color: #EEF0EB;
+}
+
+/* Right section with login form */
+.right-section {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex: 1;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.title {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #153243;
+}
+
+.login-subtext {
+  
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 14px;
+  color: #153243;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal; 
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  margin: 10px auto; /* Center the button horizontally */
+  width: 50%;
+  background-color: #284B63;
+  color: #EEF0EB;
+  border: 1px solid #284B63;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+  color: #284B63; /* Change the text color */
+  border: 1px solid #284B63;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.color-analysis {
+  position: absolute;
+  top: 0px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  font-size: 12px;
+  text-align: right;
+}
+
+.login-header {
+  font-family: "Castoro", serif;
+  font-weight: bold;
+  font-style: normal; /* Use the custom font family */
+  font-size: 25px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #153243;
+}
+
+.sidebarList{
+  padding-top: 30px;
+}
+
+.tagline{
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #153243;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add this at the end of your CSS file */
+
+/* Media query for devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Change flex direction to stack elements vertically */
+    height: auto; /* Remove fixed height */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .left-section {
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .right-section {
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .login-logo {
+    max-width: 80%; /* Reduce logo size for smaller screens */
+    max-height: auto; /* Allow logo to adjust its height */
+    margin: 20px auto; /* Center logo */
+  }
+
+  .title {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .login-button {
+    width: 100%; /* Make button full width */
+  }
+}
+
+/* Media query for devices with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 20px; /* Further reduce font size for smaller screens */
+  }
+}
+

@@ -1,0 +1,243 @@
+/* ColorAnalysisResultPage.css */
+
+
+
+/* Container for the entire color analysis page */
+.result-page {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #EEF0EB;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  /* Adjustments for the result top bar */
+.result-top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    align-self: stretch;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    border-bottom: 3px solid rgba(21, 50, 67, 0.13);
+    color: #EEF0EB;
+    background-color: #153243;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  
+  /* Styles for the home logo */
+  .home-logo-container {
+    margin-left: 25px; /* Adjust as needed */
+  }
+  /* Styles for the heading container */
+.heading-container {
+    flex-grow: 1; /* Allow the heading container to grow and occupy remaining space */
+    text-align: center;
+  }
+
+h1{
+    text-align: center;
+    color: #EEF0EB;
+  }
+  
+  .user-image {
+    margin-top: 67px;
+    margin-bottom: 50px;
+  }
+  
+  .user-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #153243;
+    transition: transform .2s;
+  }
+
+  
+  .analysis-result {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+  }
+  
+  .analysis-result-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .analysis-result h2 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #153243;
+  }
+  
+  .analysis-result p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    color: #153243;
+  }
+  
+  .color-palette {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+  }
+  
+  .color-palette h2 {
+    
+    font-size: 24px;
+    color: #153243;
+  }
+  
+  .colors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .color {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    transition-delay: .1s;
+  }
+
+  .color:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+
+  h2 {
+    margin-bottom: 15px;
+    color: #153243;
+  }
+
+  h1 {
+    font-family: "Castoro", serif;
+    font-weight: bold;
+    font-style: normal; /* Use the custom font family */
+    margin-bottom: 15px;
+    color: #153243;
+  }
+  
+  p {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal; /* Use the custom font family */
+    margin-bottom: 10px;
+  }
+
+  .home-logo {
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+  }
+
+  .palette-header{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #153243;
+  }
+
+  /* Add this at the end of your CSS file */
+
+/* Media query for devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .result-page {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .heading-container {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .user-image img {
+    width: 200px; /* Adjust image size for smaller screens */
+    height: 200px;
+  }
+
+  .analysis-result-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .analysis-result h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .analysis-result p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .colors {
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid columns for smaller screens */
+  }
+
+  .color {
+    width: 40px; /* Adjust color size for smaller screens */
+    height: 40px;
+  }
+
+  .home-logo {
+    max-width: 20px; /* Adjust logo size for smaller screens */
+    max-height: 20px;
+  }
+}
+
+/* Media query for devices with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  /* Add additional styling for even smaller screens  */
+  .user-image img {
+    width: 150px; /* Further reduce image size for smaller screens */
+    height: 150px;
+  }
+
+  .analysis-result-container {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .analysis-result h2 {
+    font-size: 18px; /* Further reduce font size for smaller screens */
+  }
+
+  .analysis-result p {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+  }
+
+  .colors {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid columns for even smaller screens */
+  }
+
+  .color {
+    width: 30px; /* Further reduce color size for smaller screens */
+    height: 30px;
+  }
+
+  .home-logo {
+    max-width: 15px; /* Further reduce logo size for smaller screens */
+    max-height: 15px;
+  }
+
+  h1{
+    font-size: 20px; /* Further reduce font size for smaller screens */
+  }
+}
+
+
+  
+  
